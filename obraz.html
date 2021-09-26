@@ -1,0 +1,29 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij() 
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+     <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')" -stworzenie guzika który otwiera nową stronę z pomocą funkcji "WinOpen">
+    
+    window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); →
+    toolbar=no →wyłącza pasek narzędzi(minimalizacja,maksymalizacja)
+    directories=no, →wytłumaczenie
+    menubar=no, →wyłącza menu pod
+    height=280, →wysokość podana w pikselach
+    width=160, →szerokość podana w pikselach
+    top=200, →wytłumaczenie
+    left=200 →wytłumaczenie
+    window.close() →funkcja zamykania okna 
+    
+
+
+
+ <img src="obraz1.gif" />
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
