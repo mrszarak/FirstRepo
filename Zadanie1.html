@@ -2,23 +2,27 @@
     <head>
 <div style="color:green;font: size 55px; ;">
     <script language="JavaScript">
-   var A_zaj=prompt("Pierwsza liczba =","");
-   var B_zaj=prompt("Druga liczba=","");
+   var A=prompt("Pierwsza liczba =","");
+   var B=prompt("Druga liczba=","");
 
        
 
-    var A_zaj=parseFloat(A_zaj);
-    var B_zaj=parseFloat(B_zaj);
-var wynik;
-wynik=(A_zaj*A_zaj*A_zaj)+(3*(A_zaj*B_zaj*B_zaj))+(3*(A_zaj*B_zaj*B_zaj))+(B_zaj*B_zaj*B_zaj);
+    var x=parseFloat(A);
+    var y=parseFloat(B);
+wynik=(x+y)*(x+y)*(x+y)
+
     
-   
-    document.write("wynik wynosi="+wynik+"<br>");
+    document.write("Wczytane liczby:"+"<br>"+"A ="+A+"<br>"+"B ="+B+"<br>");
+  
+    document.write("("+A+"+"+B+")^3="+A+"^3+3"+A+"^2*"+B+"+3*"+A+"*"+B+"^2+"+B+"^3"+"<br>");
+    document.write("Wynik wynosi="+wynik+"<br>");
+
     </script>
    </div>
 </head>
 <body>
-
+    <! wynik=(A*A*A)+(3*(A*B*B))+(3*(A*B*B))+(B*B*B); >
+<!  wynik=Math.pow(x+y);>
 
 </body>
 
