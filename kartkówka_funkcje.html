@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <script language="JavaScript">
+                   var suma_ocen_wazonych;
+                   var srednia;
+                   var suma_wag;
+                   // Próbowałem z z form ale coś mie nie działa :-( //
+function f1() {
+
+           
+              var o1 =document.getElementById("#o1").value;
+              var o2 =document.getElementById("#o2").value;
+              var o3 =document.getElementById("#o3").value;
+              var o4 =document.getElementById("#o4").value;
+              var o5 =document.getElementById("#o5").value;
+              var w1 =document.getElementById("#w1").value;
+              var w2 =document.getElementById("#w2").value;
+              var w3 =document.getElementById("#w3").value;
+              var w4 =document.getElementById("#w4").value;
+              var w5 =document.getElementById("#w5").value;
+           
+                      alert("Srednia wazona wynosi=" + srednia);
+           
+       }
+               
+
+              
+               var o1p=parseFloat(o1);
+               var w1p=parseFloat(w1);
+               var o2p=parseFloat(o2);
+               var w2p=parseFloat(w2);
+               var o3p=parseFloat(o3);
+               var w3p=parseFloat(w3);
+               var o4p=parseFloat(o4);
+               var w4p=parseFloat(w4);
+               var o5p=parseFloat(o5);
+               var w5p=parseFloat(w5);
+              
+               
+     suma_ocen_wazonych=(o1p*w1p)+(o2p*w2p)+(o3p*w3p)+(o4p*w4p)+(o5p*w5p);
+     suma_wag=w1p+w2p+w3p+w4p+w5p;
+     srednia=suma_ocen_wazonych/suma_wag;
+
+     
+        </script>
+        <h3>Oceny</h3> <br> <br>
+          <input type="text" class="enter"  id="#o1"/>
+          <input type="text" class="enter"  id="#o2"/>
+          <input type="text" class="enter"  id="#o3"/>
+          <input type="text" class="enter"  id="#o4"/>
+          <input type="text" class="enter"  id="#o5"/>
+          
+          
+                  <h3>Wagi</h3> <br> <br>
+          
+           <input type="text" class="enter"  id="#w1"/>
+           <input type="text" class="enter"  id="#w2"/>
+          <input type="text" class="enter"  id="#w3"/>
+           <input type="text" class="enter"  id="#w4"/>
+            <input type="text" class="enter"  id="#w5"/>       
+                
+           <input type="button" onClick="f1()" value="Kliknij mnie"/> 
+        
+        
+        
+    </body>
+</html>
