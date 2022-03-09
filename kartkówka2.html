@@ -1,0 +1,32 @@
+<html>
+<head>
+
+    
+<script language="JavaScript">
+    function getInputValue() {
+
+    let inputVal_11 = document.getElementById("11").value;
+    let inputVal_22 = document.getElementById("22").value;
+    let inputVal_33 = document.getElementById("33").value;
+    let inputVal_44 = document.getElementById("44").value;
+    var a11 = parseFloat(inputVal_11);
+    var a22 = parseFloat(inputVal_22);
+    var a33 = parseFloat(inputVal_33);
+    var a44 = parseFloat(inputVal_44);
+
+    var wyznacznik_2x2 = ((a11*a22)-(a33*a44));
+    document.write("wyznacznik 2x2="+wyznacznik_2x2)
+
+    }
+</script>
+</head>
+<body>
+    <input type="text" placeholder="Podaj liczbe" id="11">
+    <input type="text" placeholder="Podaj liczbe" id="22">
+    <input type="text" placeholder="Podaj liczbe" id="33">
+    <input type="text" placeholder="Podaj liczbe" id="44">
+
+    <button type="button" oneclick="getInputValue()">Click</button>
+</body>
+
+</html>
