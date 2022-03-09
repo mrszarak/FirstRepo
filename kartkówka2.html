@@ -1,0 +1,32 @@
+<html>
+<head>
+
+    
+<script>
+
+var wyznacznik_2x2;
+
+
+    function getInputValue() {
+    let inputVal_11 = document.getElementById("11").value=parseFloat(a11);
+    let inputVal_22 = document.getElementById("22").value=parseFloat(a22);
+    let inputVal_33 = document.getElementById("33").value=parseFloat(a33);
+    let inputVal_44 = document.getElementById("44").value=parseFloat(a44);
+
+    wyznacznik_2x2=((inputVal_11*inputVal_22)-(inputVal_33*inputVal_44));
+
+    alert(wyznacznik_2x2)
+    
+
+    }
+</script>
+</head>
+<body>
+    <input type="text" placeholder="Podaj liczbe" id="11">
+    <input type="text" placeholder="Podaj liczbe" id="22">
+    <input type="text" placeholder="Podaj liczbe" id="33">
+    <input type="text" placeholder="Podaj liczbe" id="44">
+    <button type="button" oneclick="getInputValue()">Click</button>
+</body>
+
+</html>
